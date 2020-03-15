@@ -1,0 +1,11 @@
+version: '2'
+services:
+  jhipstersamplegameserver-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/jhipsterSampleGameServer/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=jhipsterSampleGameServer
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
